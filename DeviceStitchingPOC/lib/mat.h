@@ -1,7 +1,7 @@
 #pragma once
 
 #include <memory>
-//#include <tr1/memory>
+#include <tr1/memory>
 #include <cstring>
 #include "debugutils.hh"
 

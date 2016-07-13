@@ -6,21 +6,21 @@
 #include <cmath>
 
 #include "main.hpp"
-#include "feature/extrema.hh"
-#include "feature/matcher.hh"
-#include "feature/orientation.hh"
-#include "lib/mat.h"
-#include "lib/config.hh"
-#include "lib/geometry.hh"
-#include "lib/imgproc.hh"
-#include "lib/planedrawer.hh"
-#include "lib/polygon.hh"
-#include "lib/timer.hh"
-#include "stitch/cylstitcher.hh"
-#include "stitch/match_info.hh"
-#include "stitch/stitcher.hh"
-#include "stitch/transform_estimate.hh"
-#include "stitch/warp.hh"
+#include "feature/extrema.hpp"
+#include "feature/matcher.hpp"
+#include "feature/orientation.hpp"
+#include "lib/mat.hpp"
+#include "lib/config.hpp"
+#include "lib/geometry.hpp"
+#include "lib/imgproc.hpp"
+#include "lib/planedrawer.hpp"
+#include "lib/polygon.hpp"
+#include "lib/timer.hpp"
+#include "stitch/cylstitcher.hpp"
+#include "stitch/match_info.hpp"
+#include "stitch/stitcher.hpp"
+#include "stitch/transform_estimate.hpp"
+#include "stitch/warp.hpp"
 #include <ctime>
 #include <cassert>
 
@@ -223,7 +223,7 @@ void test_warp(int argc, char* argv[]) {
 }
 
 
-void work(int argc, char* argv[]) {
+void work(int argc, char* argv) {
 	vector<Mat32f> imgs;
 	REPL(i, 1, argc)
 		imgs.emplace_back(read_img(argv[i]));

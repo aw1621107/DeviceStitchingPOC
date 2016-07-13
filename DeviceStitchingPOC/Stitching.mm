@@ -18,9 +18,11 @@ using namespace std;
 
 + (UIImage *) stitchImageWithArray:(NSArray*)imagePaths {
     std::string myWord = "myWord";
+    //char s[] = {['h','i', nullptr], "there"};
     //char myArray[myWord.size()+1];
     //strcpy(myArray, myWord.c_str());
-    //work(2, );
+    //work(2, s);
+    
     return nil;
 }
 /*

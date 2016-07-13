@@ -17,6 +17,6 @@ void test_warp(int argc, char* argv[]);
 void work(int argc, char* argv[]);
 void init_config();
 void planet(const char* fname);
-int main(int argc, char* argv[]);
+//int main(int argc, char* argv);
 
 #endif /* main_hpp */

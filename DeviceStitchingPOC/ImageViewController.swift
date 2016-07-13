@@ -22,6 +22,7 @@ class ImageViewController: UIViewController {
             imagePaths.append(NSBundle.mainBundle().pathForResource(NSString(format: "DJI_00%02d", i) as String, ofType: "JPG")!)
         }
         NSLog("\(imagePaths.count)")
+        imageView.image = UIImage(named: "DJI_0010.JPG")
     }
 
     override func didReceiveMemoryWarning() {

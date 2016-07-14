@@ -10,7 +10,8 @@ import UIKit
 
 class ImageViewController: UIViewController {
 
-    var imagePaths : [NSString] = []
+    var imagePaths : Array<String> = []
+    var cArray : UnsafePointer<String> = nil
     var pano : UIImage? = nil
     
     @IBOutlet var imageView: UIImageView!
@@ -23,6 +24,11 @@ class ImageViewController: UIViewController {
         }
         NSLog("\(imagePaths.count)")
         imageView.image = UIImage(named: "DJI_0010.JPG")
+        //imagePaths.withUnsafePointerToElements() { (cArray: UnsafePointer<Float>) -> () in
+                //do something with the C array
+        //}
+        Stitching.stitchImagesOfPaths()
+        //Stitching.stitchImagesOfPaths(imagePaths)
     }
 
     override func didReceiveMemoryWarning() {

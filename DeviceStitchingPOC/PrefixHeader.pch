@@ -11,7 +11,7 @@
 
 #ifdef __cplusplus
 //#import "third-party/flann/flann.hpp"
-//#import "third-party/Eigen/Eigen.hpp"
+//#import "third-party/Eigen/Eigen"
 #endif
 
 #ifdef __OBJC__

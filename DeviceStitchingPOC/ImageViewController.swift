@@ -10,25 +10,26 @@ import UIKit
 
 class ImageViewController: UIViewController {
 
-    var imagePaths : Array<String> = []
+    var imagePaths : [NSString] = []
     var cArray : UnsafePointer<String> = nil
     var pano : UIImage? = nil
+    
+    let stitchingQueue = dispatch_queue_create("com.example.DeviceStitchingPOC.stitching", DISPATCH_QUEUE_CONCURRENT)
     
     @IBOutlet var imageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for i in 1...19 {
+        for i in [1,4] {
             imagePaths.append(NSBundle.mainBundle().pathForResource(NSString(format: "DJI_00%02d", i) as String, ofType: "JPG")!)
         }
-        NSLog("\(imagePaths.count)")
-        imageView.image = UIImage(named: "DJI_0010.JPG")
-        //imagePaths.withUnsafePointerToElements() { (cArray: UnsafePointer<Float>) -> () in
-                //do something with the C array
-        //}
-        Stitching.stitchImagesOfPaths()
-        //Stitching.stitchImagesOfPaths(imagePaths)
+        dispatch_async(dispatch_get_main_queue()){
+            self.imageView.image = UIImage(named: "DJI_0010.JPG")
+        }
+        dispatch_async(stitchingQueue){
+            self.imageView.image = StitchingWrapper.stitchImagesOfPaths(self.imagePaths)
+        }
     }
 
     override func didReceiveMemoryWarning() {

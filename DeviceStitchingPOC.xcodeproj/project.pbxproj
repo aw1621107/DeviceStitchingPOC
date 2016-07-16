@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9702B4A51D290E9D000DC6EA /* Stitching.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9702B4A41D290E9D000DC6EA /* Stitching.mm */; };
+		9702B4A51D290E9D000DC6EA /* StitchingWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9702B4A41D290E9D000DC6EA /* StitchingWrapper.mm */; };
 		9702B4B91D290EFC000DC6EA /* DJI_0001.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4A61D290EFC000DC6EA /* DJI_0001.JPG */; };
 		9702B4BA1D290EFC000DC6EA /* DJI_0002.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4A71D290EFC000DC6EA /* DJI_0002.JPG */; };
 		9702B4BB1D290EFC000DC6EA /* DJI_0003.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4A81D290EFC000DC6EA /* DJI_0003.JPG */; };
@@ -33,42 +33,8 @@
 		976B33971D28FAD5004C1C46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 976B33961D28FAD5004C1C46 /* Assets.xcassets */; };
 		976B339A1D28FAD5004C1C46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976B33981D28FAD5004C1C46 /* LaunchScreen.storyboard */; };
 		97974BB01D35BDD20027CAE6 /* main.cc in Sources */ = {isa = PBXBuildFile; fileRef = 9796006B1D2E827F0043B650 /* main.cc */; };
-		97974D2A1D35C2340027CAE6 /* Array in Resources */ = {isa = PBXBuildFile; fileRef = 97974BB41D35C2340027CAE6 /* Array */; };
-		97974D2B1D35C2340027CAE6 /* Cholesky in Resources */ = {isa = PBXBuildFile; fileRef = 97974BB51D35C2340027CAE6 /* Cholesky */; };
-		97974D2C1D35C2340027CAE6 /* CholmodSupport in Resources */ = {isa = PBXBuildFile; fileRef = 97974BB61D35C2340027CAE6 /* CholmodSupport */; };
-		97974D2D1D35C2340027CAE6 /* Core in Resources */ = {isa = PBXBuildFile; fileRef = 97974BB71D35C2340027CAE6 /* Core */; };
-		97974D2E1D35C2340027CAE6 /* Dense in Resources */ = {isa = PBXBuildFile; fileRef = 97974BB81D35C2340027CAE6 /* Dense */; };
-		97974D2F1D35C2340027CAE6 /* Eigen in Resources */ = {isa = PBXBuildFile; fileRef = 97974BB91D35C2340027CAE6 /* Eigen */; };
-		97974D301D35C2340027CAE6 /* Eigen2Support in Resources */ = {isa = PBXBuildFile; fileRef = 97974BBA1D35C2340027CAE6 /* Eigen2Support */; };
-		97974D311D35C2340027CAE6 /* Eigenvalues in Resources */ = {isa = PBXBuildFile; fileRef = 97974BBB1D35C2340027CAE6 /* Eigenvalues */; };
-		97974D321D35C2340027CAE6 /* Geometry in Resources */ = {isa = PBXBuildFile; fileRef = 97974BBC1D35C2340027CAE6 /* Geometry */; };
-		97974D331D35C2340027CAE6 /* Householder in Resources */ = {isa = PBXBuildFile; fileRef = 97974BBD1D35C2340027CAE6 /* Householder */; };
-		97974D341D35C2340027CAE6 /* IterativeLinearSolvers in Resources */ = {isa = PBXBuildFile; fileRef = 97974BBE1D35C2340027CAE6 /* IterativeLinearSolvers */; };
-		97974D351D35C2340027CAE6 /* Jacobi in Resources */ = {isa = PBXBuildFile; fileRef = 97974BBF1D35C2340027CAE6 /* Jacobi */; };
-		97974D361D35C2340027CAE6 /* LeastSquares in Resources */ = {isa = PBXBuildFile; fileRef = 97974BC01D35C2340027CAE6 /* LeastSquares */; };
-		97974D371D35C2340027CAE6 /* LU in Resources */ = {isa = PBXBuildFile; fileRef = 97974BC11D35C2340027CAE6 /* LU */; };
-		97974D381D35C2340027CAE6 /* MetisSupport in Resources */ = {isa = PBXBuildFile; fileRef = 97974BC21D35C2340027CAE6 /* MetisSupport */; };
-		97974D391D35C2340027CAE6 /* OrderingMethods in Resources */ = {isa = PBXBuildFile; fileRef = 97974BC31D35C2340027CAE6 /* OrderingMethods */; };
-		97974D3A1D35C2340027CAE6 /* PardisoSupport in Resources */ = {isa = PBXBuildFile; fileRef = 97974BC41D35C2340027CAE6 /* PardisoSupport */; };
-		97974D3B1D35C2340027CAE6 /* PaStiXSupport in Resources */ = {isa = PBXBuildFile; fileRef = 97974BC51D35C2340027CAE6 /* PaStiXSupport */; };
-		97974D3C1D35C2340027CAE6 /* QR in Resources */ = {isa = PBXBuildFile; fileRef = 97974BC61D35C2340027CAE6 /* QR */; };
-		97974D3D1D35C2340027CAE6 /* QtAlignedMalloc in Resources */ = {isa = PBXBuildFile; fileRef = 97974BC71D35C2340027CAE6 /* QtAlignedMalloc */; };
-		97974D3E1D35C2340027CAE6 /* Sparse in Resources */ = {isa = PBXBuildFile; fileRef = 97974BC81D35C2340027CAE6 /* Sparse */; };
-		97974D3F1D35C2340027CAE6 /* SparseCholesky in Resources */ = {isa = PBXBuildFile; fileRef = 97974BC91D35C2340027CAE6 /* SparseCholesky */; };
-		97974D401D35C2340027CAE6 /* SparseCore in Resources */ = {isa = PBXBuildFile; fileRef = 97974BCA1D35C2340027CAE6 /* SparseCore */; };
-		97974D411D35C2340027CAE6 /* SparseLU in Resources */ = {isa = PBXBuildFile; fileRef = 97974BCB1D35C2340027CAE6 /* SparseLU */; };
-		97974D421D35C2340027CAE6 /* SparseQR in Resources */ = {isa = PBXBuildFile; fileRef = 97974BCC1D35C2340027CAE6 /* SparseQR */; };
-		97974D431D35C2340027CAE6 /* SPQRSupport in Resources */ = {isa = PBXBuildFile; fileRef = 97974BCD1D35C2340027CAE6 /* SPQRSupport */; };
-		97974D441D35C2340027CAE6 /* StdDeque in Resources */ = {isa = PBXBuildFile; fileRef = 97974CF11D35C2340027CAE6 /* StdDeque */; };
-		97974D451D35C2340027CAE6 /* StdList in Resources */ = {isa = PBXBuildFile; fileRef = 97974CF21D35C2340027CAE6 /* StdList */; };
-		97974D461D35C2340027CAE6 /* StdVector in Resources */ = {isa = PBXBuildFile; fileRef = 97974CF31D35C2340027CAE6 /* StdVector */; };
-		97974D471D35C2340027CAE6 /* SuperLUSupport in Resources */ = {isa = PBXBuildFile; fileRef = 97974CF41D35C2340027CAE6 /* SuperLUSupport */; };
-		97974D481D35C2340027CAE6 /* SVD in Resources */ = {isa = PBXBuildFile; fileRef = 97974CF51D35C2340027CAE6 /* SVD */; };
-		97974D491D35C2340027CAE6 /* UmfPackSupport in Resources */ = {isa = PBXBuildFile; fileRef = 97974CF61D35C2340027CAE6 /* UmfPackSupport */; };
-		97974D4A1D35C2340027CAE6 /* kdtree_cuda_3d_index.cu in Resources */ = {isa = PBXBuildFile; fileRef = 97974CFF1D35C2340027CAE6 /* kdtree_cuda_3d_index.cu */; };
-		97974D4B1D35C2340027CAE6 /* config.h.in in Resources */ = {isa = PBXBuildFile; fileRef = 97974D091D35C2340027CAE6 /* config.h.in */; };
-		97974D4C1D35C2340027CAE6 /* COPYING in Resources */ = {isa = PBXBuildFile; fileRef = 97974D0A1D35C2340027CAE6 /* COPYING */; };
 		97974D4D1D35C2340027CAE6 /* lodepng.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 97974D281D35C2340027CAE6 /* lodepng.cpp */; };
+		97A81C041D396A0F009AAEA7 /* config.cfg in Resources */ = {isa = PBXBuildFile; fileRef = 97A81C031D396A0F009AAEA7 /* config.cfg */; };
 		97DEFAE21D380FD300F4FA22 /* libjpeg.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 97DEFAE11D380FD300F4FA22 /* libjpeg.framework */; };
 		97DEFC021D38105A00F4FA22 /* blender.cc in Sources */ = {isa = PBXBuildFile; fileRef = 97DEFBE61D38105A00F4FA22 /* blender.cc */; };
 		97DEFC031D38105A00F4FA22 /* camera.cc in Sources */ = {isa = PBXBuildFile; fileRef = 97DEFBE81D38105A00F4FA22 /* camera.cc */; };
@@ -107,7 +73,7 @@
 
 /* Begin PBXFileReference section */
 		9702B4A31D290E9D000DC6EA /* DeviceStitchingPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeviceStitchingPOC-Bridging-Header.h"; sourceTree = "<group>"; };
-		9702B4A41D290E9D000DC6EA /* Stitching.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = Stitching.mm; sourceTree = "<group>"; };
+		9702B4A41D290E9D000DC6EA /* StitchingWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StitchingWrapper.mm; sourceTree = "<group>"; };
 		9702B4A61D290EFC000DC6EA /* DJI_0001.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0001.JPG; path = ../../../p4/DJI_0001.JPG; sourceTree = "<group>"; };
 		9702B4A71D290EFC000DC6EA /* DJI_0002.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0002.JPG; path = ../../../p4/DJI_0002.JPG; sourceTree = "<group>"; };
 		9702B4A81D290EFC000DC6EA /* DJI_0003.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0003.JPG; path = ../../../p4/DJI_0003.JPG; sourceTree = "<group>"; };
@@ -127,7 +93,7 @@
 		9702B4B61D290EFC000DC6EA /* DJI_0017.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0017.JPG; path = ../../../p4/DJI_0017.JPG; sourceTree = "<group>"; };
 		9702B4B71D290EFC000DC6EA /* DJI_0018.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0018.JPG; path = ../../../p4/DJI_0018.JPG; sourceTree = "<group>"; };
 		9702B4B81D290EFC000DC6EA /* DJI_0019.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0019.JPG; path = ../../../p4/DJI_0019.JPG; sourceTree = "<group>"; };
-		9702B4CD1D291239000DC6EA /* Stitching.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Stitching.hh; sourceTree = "<group>"; };
+		9702B4CD1D291239000DC6EA /* StitchingWrapper.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StitchingWrapper.hh; sourceTree = "<group>"; };
 		9702B4ED1D295844000DC6EA /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		976B338C1D28FAD5004C1C46 /* DeviceStitchingPOC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceStitchingPOC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		976B338F1D28FAD5004C1C46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -470,6 +436,7 @@
 		97974D261D35C2340027CAE6 /* timer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = timer.h; sourceTree = "<group>"; };
 		97974D281D35C2340027CAE6 /* lodepng.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = lodepng.cpp; sourceTree = "<group>"; };
 		97974D291D35C2340027CAE6 /* lodepng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = lodepng.h; sourceTree = "<group>"; };
+		97A81C031D396A0F009AAEA7 /* config.cfg */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = config.cfg; path = DeviceStitchingPOC/config.cfg; sourceTree = "<group>"; };
 		97DEFAE11D380FD300F4FA22 /* libjpeg.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = libjpeg.framework; sourceTree = "<group>"; };
 		97DEFBE61D38105A00F4FA22 /* blender.cc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = blender.cc; sourceTree = "<group>"; };
 		97DEFBE71D38105A00F4FA22 /* blender.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = blender.hh; sourceTree = "<group>"; };
@@ -557,6 +524,7 @@
 		976B33831D28FAD5004C1C46 = {
 			isa = PBXGroup;
 			children = (
+				97A81C031D396A0F009AAEA7 /* config.cfg */,
 				97DEFAE11D380FD300F4FA22 /* libjpeg.framework */,
 				97DEFC0F1D38109000F4FA22 /* feature */,
 				97DEFC221D38109000F4FA22 /* lib */,
@@ -581,8 +549,8 @@
 			children = (
 				9796006B1D2E827F0043B650 /* main.cc */,
 				9796006C1D2E827F0043B650 /* main.hh */,
-				9702B4CD1D291239000DC6EA /* Stitching.hh */,
-				9702B4A41D290E9D000DC6EA /* Stitching.mm */,
+				9702B4CD1D291239000DC6EA /* StitchingWrapper.hh */,
+				9702B4A41D290E9D000DC6EA /* StitchingWrapper.mm */,
 				976B339B1D28FAD5004C1C46 /* Info.plist */,
 				976B338F1D28FAD5004C1C46 /* AppDelegate.swift */,
 				976B33911D28FAD5004C1C46 /* ImageViewController.swift */,
@@ -1465,41 +1433,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				97974D2A1D35C2340027CAE6 /* Array in Resources */,
-				97974D2D1D35C2340027CAE6 /* Core in Resources */,
-				97974D461D35C2340027CAE6 /* StdVector in Resources */,
-				97974D471D35C2340027CAE6 /* SuperLUSupport in Resources */,
-				97974D301D35C2340027CAE6 /* Eigen2Support in Resources */,
-				97974D3C1D35C2340027CAE6 /* QR in Resources */,
-				97974D2C1D35C2340027CAE6 /* CholmodSupport in Resources */,
-				97974D351D35C2340027CAE6 /* Jacobi in Resources */,
-				97974D2E1D35C2340027CAE6 /* Dense in Resources */,
-				97974D431D35C2340027CAE6 /* SPQRSupport in Resources */,
-				97974D3E1D35C2340027CAE6 /* Sparse in Resources */,
-				97974D331D35C2340027CAE6 /* Householder in Resources */,
-				97974D4B1D35C2340027CAE6 /* config.h.in in Resources */,
-				97974D361D35C2340027CAE6 /* LeastSquares in Resources */,
-				97974D401D35C2340027CAE6 /* SparseCore in Resources */,
-				97974D3F1D35C2340027CAE6 /* SparseCholesky in Resources */,
-				97974D451D35C2340027CAE6 /* StdList in Resources */,
-				97974D2B1D35C2340027CAE6 /* Cholesky in Resources */,
-				97974D311D35C2340027CAE6 /* Eigenvalues in Resources */,
-				97974D3B1D35C2340027CAE6 /* PaStiXSupport in Resources */,
-				97974D371D35C2340027CAE6 /* LU in Resources */,
-				97974D411D35C2340027CAE6 /* SparseLU in Resources */,
-				97974D491D35C2340027CAE6 /* UmfPackSupport in Resources */,
-				97974D2F1D35C2340027CAE6 /* Eigen in Resources */,
-				97974D3D1D35C2340027CAE6 /* QtAlignedMalloc in Resources */,
-				97974D391D35C2340027CAE6 /* OrderingMethods in Resources */,
-				97974D4C1D35C2340027CAE6 /* COPYING in Resources */,
-				97974D421D35C2340027CAE6 /* SparseQR in Resources */,
-				97974D441D35C2340027CAE6 /* StdDeque in Resources */,
-				97974D3A1D35C2340027CAE6 /* PardisoSupport in Resources */,
-				97974D381D35C2340027CAE6 /* MetisSupport in Resources */,
-				97974D341D35C2340027CAE6 /* IterativeLinearSolvers in Resources */,
-				97974D4A1D35C2340027CAE6 /* kdtree_cuda_3d_index.cu in Resources */,
-				97974D481D35C2340027CAE6 /* SVD in Resources */,
-				97974D321D35C2340027CAE6 /* Geometry in Resources */,
+				97A81C041D396A0F009AAEA7 /* config.cfg in Resources */,
 				9702B4B91D290EFC000DC6EA /* DJI_0001.JPG in Resources */,
 				9702B4BA1D290EFC000DC6EA /* DJI_0002.JPG in Resources */,
 				9702B4BB1D290EFC000DC6EA /* DJI_0003.JPG in Resources */,
@@ -1534,7 +1468,7 @@
 			files = (
 				976B33901D28FAD5004C1C46 /* AppDelegate.swift in Sources */,
 				976B33921D28FAD5004C1C46 /* ImageViewController.swift in Sources */,
-				9702B4A51D290E9D000DC6EA /* Stitching.mm in Sources */,
+				9702B4A51D290E9D000DC6EA /* StitchingWrapper.mm in Sources */,
 				97974BB01D35BDD20027CAE6 /* main.cc in Sources */,
 				97DEFC411D38109000F4FA22 /* orientation.cc in Sources */,
 				97DEFC401D38109000F4FA22 /* matcher.cc in Sources */,

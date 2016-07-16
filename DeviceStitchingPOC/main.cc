@@ -196,7 +196,7 @@ void test_warp(int argc, char* argv[]) {
 }
 
 
-void work(int argc, const char* argv[]) {
+void work(int argc, const char* argv[], const char* outputFilePath) {
     /*
      *  vector<Mat32f> imgs(argc - 1);
      *  {
@@ -206,9 +206,8 @@ void work(int argc, const char* argv[]) {
      *      imgs[i-1] = read_img(argv[i]);
      *  }
      */
-    cout << argv[0];
     vector<string> imgs;
-    REPL(i, 1, argc) imgs.emplace_back(argv[i]);
+    REPL(i, 0, argc) imgs.emplace_back(argv[i]);
     Mat32f res;
     if (CYLINDER) {
         CylinderStitcher p(move(imgs));
@@ -225,7 +224,7 @@ void work(int argc, const char* argv[]) {
     }
     {
         GuardedTimer tm("Writing image");
-        write_rgb("/Users/zchen/Desktop/out.jpg", res);
+        write_rgb(outputFilePath, res);
     }
 }
 
@@ -325,30 +324,40 @@ void planet(const char* fname) {
     write_rgb("planet.jpg", ret);
 }
 
-void start(int argc, const char* argv[]) {
-    if (argc <= 2)
+void stitchPanoWithImagePathsAndConfig(int numImages, const char* imagePaths[], const char* configFilePath, const char* outputFilePath) {
+    if (numImages < 2)
+        error_exit("Need at least two images to stitch.\n");
+    TotalTimerGlobalGuard _g;
+    srand(time(NULL));
+    init_config(configFilePath);
+    work(numImages, imagePaths, outputFilePath);
+}
+/*
+void stitchPlanetWithPathsAndConfig(int numImages, const char* imagePaths[], const char* configPath) {
+    if (numImages < 2)
         error_exit("Need at least two images to stitch.\n");
     TotalTimerGlobalGuard _g;
     srand(time(NULL));
     char const *path = "/Users/zchen/Desktop/config.cfg";
     //char const ** argv = path;
     init_config(path);
-    /*string command = argv[1];
-    if (command == "raw_extrema")
-        test_extrema(argv[2], 0);
-    else if (command == "keypoint")
-        test_extrema(argv[2], 1);
-    else if (command == "orientation")
-        test_orientation(argv[2]);
-    else if (command == "match")
-        test_match(argv[2], argv[3]);
-    else if (command == "inlier")
-        test_inlier(argv[2], argv[3]);
-    else if (command == "warp")
-        test_warp(argc, argv);
-    else if (command == "planet")
-        planet(argv[2]);
-    else*/
-        // the real routine
-        work(argc, argv);
-}
+    string command = argv[1];
+     if (command == "raw_extrema")
+     test_extrema(argv[2], 0);
+     else if (command == "keypoint")
+     test_extrema(argv[2], 1);
+     else if (command == "orientation")
+     test_orientation(argv[2]);
+     else if (command == "match")
+     test_match(argv[2], argv[3]);
+     else if (command == "inlier")
+     test_inlier(argv[2], argv[3]);
+     else if (command == "warp")
+     test_warp(argc, argv);
+     else if (command == "planet")
+     planet(argv[2]);
+     else
+    // the real routine
+    work(numImages, imagePaths);
+}*/
+

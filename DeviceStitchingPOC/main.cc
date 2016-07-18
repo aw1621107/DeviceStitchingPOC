@@ -196,7 +196,7 @@ void test_warp(int argc, char* argv[]) {
 }
 
 
-void work(int argc, const char* argv[], const char* outputFilePath) {
+Mat32f work(int argc, const char* argv[], const char* outputFilePath) {
     /*
      *  vector<Mat32f> imgs(argc - 1);
      *  {
@@ -222,6 +222,7 @@ void work(int argc, const char* argv[], const char* outputFilePath) {
         res = crop(res);
         print_debug("Crop from %dx%d to %dx%d\n", oldh, oldw, res.height(), res.width());
     }
+    return res;
     {
         GuardedTimer tm("Writing image");
         write_rgb(outputFilePath, res);
@@ -324,13 +325,13 @@ void planet(const char* fname) {
     write_rgb("planet.jpg", ret);
 }
 
-void stitchPanoWithImagePathsAndConfig(int numImages, const char* imagePaths[], const char* configFilePath, const char* outputFilePath) {
+Mat32f stitchPanoWithImagePathsAndConfig(int numImages, const char* imagePaths[], const char* configFilePath, const char* outputFilePath) {
     if (numImages < 2)
         error_exit("Need at least two images to stitch.\n");
     TotalTimerGlobalGuard _g;
     srand(time(NULL));
     init_config(configFilePath);
-    work(numImages, imagePaths, outputFilePath);
+    return work(numImages, imagePaths, outputFilePath);
 }
 /*
 void stitchPlanetWithPathsAndConfig(int numImages, const char* imagePaths[], const char* configPath) {

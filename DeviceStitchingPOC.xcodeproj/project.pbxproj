@@ -106,31 +106,31 @@
 		9796006C1D2E827F0043B650 /* main.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = main.hh; sourceTree = "<group>"; };
 		97974BB21D35C2340027CAE6 /* CImg.hh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = CImg.hh; sourceTree = "<group>"; };
 		97974BB41D35C2340027CAE6 /* Array */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Array; sourceTree = "<group>"; };
-		97974BB51D35C2340027CAE6 /* Cholesky */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Cholesky; sourceTree = "<group>"; };
-		97974BB61D35C2340027CAE6 /* CholmodSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CholmodSupport; sourceTree = "<group>"; };
-		97974BB71D35C2340027CAE6 /* Core */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Core; sourceTree = "<group>"; };
-		97974BB81D35C2340027CAE6 /* Dense */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Dense; sourceTree = "<group>"; };
-		97974BB91D35C2340027CAE6 /* Eigen */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Eigen; sourceTree = "<group>"; };
-		97974BBA1D35C2340027CAE6 /* Eigen2Support */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Eigen2Support; sourceTree = "<group>"; };
-		97974BBB1D35C2340027CAE6 /* Eigenvalues */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Eigenvalues; sourceTree = "<group>"; };
-		97974BBC1D35C2340027CAE6 /* Geometry */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Geometry; sourceTree = "<group>"; };
-		97974BBD1D35C2340027CAE6 /* Householder */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Householder; sourceTree = "<group>"; };
-		97974BBE1D35C2340027CAE6 /* IterativeLinearSolvers */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = IterativeLinearSolvers; sourceTree = "<group>"; };
-		97974BBF1D35C2340027CAE6 /* Jacobi */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Jacobi; sourceTree = "<group>"; };
-		97974BC01D35C2340027CAE6 /* LeastSquares */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LeastSquares; sourceTree = "<group>"; };
-		97974BC11D35C2340027CAE6 /* LU */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LU; sourceTree = "<group>"; };
-		97974BC21D35C2340027CAE6 /* MetisSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = MetisSupport; sourceTree = "<group>"; };
-		97974BC31D35C2340027CAE6 /* OrderingMethods */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OrderingMethods; sourceTree = "<group>"; };
-		97974BC41D35C2340027CAE6 /* PardisoSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PardisoSupport; sourceTree = "<group>"; };
-		97974BC51D35C2340027CAE6 /* PaStiXSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PaStiXSupport; sourceTree = "<group>"; };
-		97974BC61D35C2340027CAE6 /* QR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QR; sourceTree = "<group>"; };
-		97974BC71D35C2340027CAE6 /* QtAlignedMalloc */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = QtAlignedMalloc; sourceTree = "<group>"; };
-		97974BC81D35C2340027CAE6 /* Sparse */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Sparse; sourceTree = "<group>"; };
-		97974BC91D35C2340027CAE6 /* SparseCholesky */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseCholesky; sourceTree = "<group>"; };
-		97974BCA1D35C2340027CAE6 /* SparseCore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseCore; sourceTree = "<group>"; };
-		97974BCB1D35C2340027CAE6 /* SparseLU */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseLU; sourceTree = "<group>"; };
-		97974BCC1D35C2340027CAE6 /* SparseQR */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SparseQR; sourceTree = "<group>"; };
-		97974BCD1D35C2340027CAE6 /* SPQRSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SPQRSupport; sourceTree = "<group>"; };
+		97974BB51D35C2340027CAE6 /* Cholesky */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = Cholesky; sourceTree = "<group>"; };
+		97974BB61D35C2340027CAE6 /* CholmodSupport */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = CholmodSupport; sourceTree = "<group>"; };
+		97974BB71D35C2340027CAE6 /* Core */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.h; fileEncoding = 4; path = Core; sourceTree = "<group>"; };
+		97974BB81D35C2340027CAE6 /* Dense */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = Dense; sourceTree = "<group>"; };
+		97974BB91D35C2340027CAE6 /* Eigen */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = Eigen; sourceTree = "<group>"; };
+		97974BBA1D35C2340027CAE6 /* Eigen2Support */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = Eigen2Support; sourceTree = "<group>"; };
+		97974BBB1D35C2340027CAE6 /* Eigenvalues */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = Eigenvalues; sourceTree = "<group>"; };
+		97974BBC1D35C2340027CAE6 /* Geometry */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = Geometry; sourceTree = "<group>"; };
+		97974BBD1D35C2340027CAE6 /* Householder */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = Householder; sourceTree = "<group>"; };
+		97974BBE1D35C2340027CAE6 /* IterativeLinearSolvers */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = IterativeLinearSolvers; sourceTree = "<group>"; };
+		97974BBF1D35C2340027CAE6 /* Jacobi */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = Jacobi; sourceTree = "<group>"; };
+		97974BC01D35C2340027CAE6 /* LeastSquares */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = LeastSquares; sourceTree = "<group>"; };
+		97974BC11D35C2340027CAE6 /* LU */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = LU; sourceTree = "<group>"; };
+		97974BC21D35C2340027CAE6 /* MetisSupport */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = MetisSupport; sourceTree = "<group>"; };
+		97974BC31D35C2340027CAE6 /* OrderingMethods */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = OrderingMethods; sourceTree = "<group>"; };
+		97974BC41D35C2340027CAE6 /* PardisoSupport */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = PardisoSupport; sourceTree = "<group>"; };
+		97974BC51D35C2340027CAE6 /* PaStiXSupport */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = PaStiXSupport; sourceTree = "<group>"; };
+		97974BC61D35C2340027CAE6 /* QR */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = QR; sourceTree = "<group>"; };
+		97974BC71D35C2340027CAE6 /* QtAlignedMalloc */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = QtAlignedMalloc; sourceTree = "<group>"; };
+		97974BC81D35C2340027CAE6 /* Sparse */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = Sparse; sourceTree = "<group>"; };
+		97974BC91D35C2340027CAE6 /* SparseCholesky */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = SparseCholesky; sourceTree = "<group>"; };
+		97974BCA1D35C2340027CAE6 /* SparseCore */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = SparseCore; sourceTree = "<group>"; };
+		97974BCB1D35C2340027CAE6 /* SparseLU */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = SparseLU; sourceTree = "<group>"; };
+		97974BCC1D35C2340027CAE6 /* SparseQR */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = SparseQR; sourceTree = "<group>"; };
+		97974BCD1D35C2340027CAE6 /* SPQRSupport */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = SPQRSupport; sourceTree = "<group>"; };
 		97974BD01D35C2340027CAE6 /* LDLT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LDLT.h; sourceTree = "<group>"; };
 		97974BD11D35C2340027CAE6 /* LLT.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLT.h; sourceTree = "<group>"; };
 		97974BD21D35C2340027CAE6 /* LLT_MKL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LLT_MKL.h; sourceTree = "<group>"; };
@@ -385,12 +385,12 @@
 		97974CED1D35C2340027CAE6 /* JacobiSVD_MKL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JacobiSVD_MKL.h; sourceTree = "<group>"; };
 		97974CEE1D35C2340027CAE6 /* UpperBidiagonalization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpperBidiagonalization.h; sourceTree = "<group>"; };
 		97974CF01D35C2340027CAE6 /* UmfPackSupport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UmfPackSupport.h; sourceTree = "<group>"; };
-		97974CF11D35C2340027CAE6 /* StdDeque */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StdDeque; sourceTree = "<group>"; };
-		97974CF21D35C2340027CAE6 /* StdList */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StdList; sourceTree = "<group>"; };
-		97974CF31D35C2340027CAE6 /* StdVector */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = StdVector; sourceTree = "<group>"; };
-		97974CF41D35C2340027CAE6 /* SuperLUSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SuperLUSupport; sourceTree = "<group>"; };
-		97974CF51D35C2340027CAE6 /* SVD */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SVD; sourceTree = "<group>"; };
-		97974CF61D35C2340027CAE6 /* UmfPackSupport */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UmfPackSupport; sourceTree = "<group>"; };
+		97974CF11D35C2340027CAE6 /* StdDeque */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = StdDeque; sourceTree = "<group>"; };
+		97974CF21D35C2340027CAE6 /* StdList */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = StdList; sourceTree = "<group>"; };
+		97974CF31D35C2340027CAE6 /* StdVector */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = StdVector; sourceTree = "<group>"; };
+		97974CF41D35C2340027CAE6 /* SuperLUSupport */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = SuperLUSupport; sourceTree = "<group>"; };
+		97974CF51D35C2340027CAE6 /* SVD */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = SVD; sourceTree = "<group>"; };
+		97974CF61D35C2340027CAE6 /* UmfPackSupport */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = UmfPackSupport; sourceTree = "<group>"; };
 		97974CF91D35C2340027CAE6 /* all_indices.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = all_indices.h; sourceTree = "<group>"; };
 		97974CFA1D35C2340027CAE6 /* autotuned_index.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = autotuned_index.h; sourceTree = "<group>"; };
 		97974CFB1D35C2340027CAE6 /* center_chooser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = center_chooser.h; sourceTree = "<group>"; };
@@ -1624,6 +1624,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				DYLIB_INSTALL_NAME_BASE = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DeviceStitchingPOC/third-party",
@@ -1632,6 +1633,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DeviceStitchingPOC/PrefixHeader.pch";
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)",
 					"$(SRCROOT)/DeviceStitchingPOC/",
@@ -1666,6 +1668,7 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				DYLIB_INSTALL_NAME_BASE = "";
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/DeviceStitchingPOC/third-party",
@@ -1674,6 +1677,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/DeviceStitchingPOC/PrefixHeader.pch";
+				GCC_VERSION = "";
 				HEADER_SEARCH_PATHS = (
 					"$(SRCROOT)",
 					"$(SRCROOT)/DeviceStitchingPOC/",

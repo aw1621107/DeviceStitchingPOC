@@ -21,7 +21,7 @@ class ImageViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        for i in [1,4] {
+        for i in 1...6 {
             imagePaths.append(NSBundle.mainBundle().pathForResource(NSString(format: "DJI_00%02d", i) as String, ofType: "JPG")!)
         }
         dispatch_async(dispatch_get_main_queue()){

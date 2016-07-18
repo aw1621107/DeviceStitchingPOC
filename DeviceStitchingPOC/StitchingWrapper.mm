@@ -28,7 +28,7 @@ using namespace std;
     for (int i=0; i<imagePaths.count; i++) {
         charArrays[i] = [imagePaths[i] UTF8String];
     }
-    stitchPanoWithImagePathsAndConfig(imagePaths.count, charArrays, [[[[NSBundle mainBundle] URLForResource:@"config" withExtension:@"cfg"] path] UTF8String], [outputFilePath UTF8String]);
+    return [StitchingWrapper UIImageFromMat:stitchPanoWithImagePathsAndConfig((int)imagePaths.count, charArrays, [[[[NSBundle mainBundle] URLForResource:@"config" withExtension:@"cfg"] path] UTF8String], [outputFilePath UTF8String])];
     printf("finished stitching!");
     UIImage* pano = [UIImage imageWithContentsOfFile:outputFilePath];
     
@@ -38,5 +38,33 @@ using namespace std;
     }*/
     return pano;
 }
+
++ (UIImage *) UIImageFromMat:(Mat32f)mat {
+    NSData *data = [NSData dataWithBytes:mat.ptr() length:mat.pixels()*mat.channels()*sizeof(float)];
+    CGColorSpace* colorSpace = CGColorSpaceCreateDeviceRGB();
+    CGDataProviderRef provider = CGDataProviderCreateWithCFData((__bridge CFDataRef)data);
+    
+    CGImage* cgImg = CGImageCreate(mat.width(),                                 //width
+                                   mat.height(),                                 //height
+                                   32,                                          //bits per component 8 or 32?
+                                   32 * mat.channels(),                       //bits per pixel
+                                   4 * mat.channels() * mat.width(),                            //bytesPerRow
+                                   colorSpace,                                 //colorspace
+                                   kCGImageAlphaNone|kCGBitmapByteOrderDefault
+                                   |kCGBitmapFloatComponents,// bitmap info
+                                   provider,                                   //CGDataProviderRef
+                                   NULL,                                       //decode
+                                   false,                                      //should interpolate
+                                   kCGRenderingIntentDefault                   //intent
+                                   );
+    UIImage *finalImage = [UIImage imageWithCGImage:cgImg];
+    
+    CGImageRelease(cgImg);
+    CGDataProviderRelease(provider);
+    CGColorSpaceRelease(colorSpace);
+    
+    return finalImage;
+}
+
 
 @end

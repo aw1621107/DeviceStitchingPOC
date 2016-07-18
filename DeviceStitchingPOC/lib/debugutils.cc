@@ -43,7 +43,8 @@ void __print_debug__(const char *file, const char *func, int line, const char *f
 #else
   char *fbase = basename(strdup(file));
 #endif
-  c_fprintf(colormap[line].c_str(), stderr, "[%s@%s:%d] ", func, fbase, line);
+  //c_fprintf(colormap[line].c_str(), stderr, "[%s@%s:%d] ", func, fbase, line);
+    fprintf(stderr, "[%s@%s:%d] ", func, fbase, line);
 
 	va_list ap;
 	va_start(ap, fmt);

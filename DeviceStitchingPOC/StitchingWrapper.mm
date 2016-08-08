@@ -45,17 +45,17 @@ using namespace std;
     CGDataProviderRef provider = CGDataProviderCreateWithCFData((__bridge CFDataRef)data);
     
     CGImage* cgImg = CGImageCreate(mat.width(),                                 //width
-                                   mat.height(),                                 //height
+                                   mat.height(),                                //height
                                    32,                                          //bits per component 8 or 32?
-                                   32 * mat.channels(),                       //bits per pixel
-                                   4 * mat.channels() * mat.width(),                            //bytesPerRow
-                                   colorSpace,                                 //colorspace
+                                   32 * mat.channels(),                         //bits per pixel
+                                   4 * mat.channels() * mat.width(),            //bytesPerRow
+                                   colorSpace,                                  //colorspace
                                    kCGImageAlphaNone|kCGBitmapByteOrderDefault
-                                   |kCGBitmapFloatComponents,// bitmap info
-                                   provider,                                   //CGDataProviderRef
-                                   NULL,                                       //decode
-                                   false,                                      //should interpolate
-                                   kCGRenderingIntentDefault                   //intent
+                                   |kCGBitmapFloatComponents,                   // bitmap info
+                                   provider,                                    //CGDataProviderRef
+                                   NULL,                                        //decode
+                                   false,                                       //should interpolate
+                                   kCGRenderingIntentDefault                    //intent
                                    );
     UIImage *finalImage = [UIImage imageWithCGImage:cgImg];
     

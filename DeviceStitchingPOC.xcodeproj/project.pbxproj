@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		246C26521D956C0C00D30395 /* DJI_0001.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C263F1D956C0C00D30395 /* DJI_0001.JPG */; };
+		246C26531D956C0C00D30395 /* DJI_0002.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26401D956C0C00D30395 /* DJI_0002.JPG */; };
+		246C26541D956C0C00D30395 /* DJI_0003.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26411D956C0C00D30395 /* DJI_0003.JPG */; };
+		246C26551D956C0C00D30395 /* DJI_0004.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26421D956C0C00D30395 /* DJI_0004.JPG */; };
+		246C26561D956C0C00D30395 /* DJI_0005.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26431D956C0C00D30395 /* DJI_0005.JPG */; };
+		246C26571D956C0C00D30395 /* DJI_0006.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26441D956C0C00D30395 /* DJI_0006.JPG */; };
+		246C26581D956C0C00D30395 /* DJI_0007.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26451D956C0C00D30395 /* DJI_0007.JPG */; };
+		246C26591D956C0C00D30395 /* DJI_0008.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26461D956C0C00D30395 /* DJI_0008.JPG */; };
+		246C265A1D956C0C00D30395 /* DJI_0009.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26471D956C0C00D30395 /* DJI_0009.JPG */; };
+		246C265B1D956C0C00D30395 /* DJI_0010.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26481D956C0C00D30395 /* DJI_0010.JPG */; };
+		246C265C1D956C0C00D30395 /* DJI_0011.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26491D956C0C00D30395 /* DJI_0011.JPG */; };
+		246C265D1D956C0C00D30395 /* DJI_0012.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C264A1D956C0C00D30395 /* DJI_0012.JPG */; };
+		246C265E1D956C0C00D30395 /* DJI_0013.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C264B1D956C0C00D30395 /* DJI_0013.JPG */; };
+		246C265F1D956C0C00D30395 /* DJI_0014.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C264C1D956C0C00D30395 /* DJI_0014.JPG */; };
+		246C26601D956C0C00D30395 /* DJI_0015.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C264D1D956C0C00D30395 /* DJI_0015.JPG */; };
+		246C26611D956C0C00D30395 /* DJI_0016.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C264E1D956C0C00D30395 /* DJI_0016.JPG */; };
+		246C26621D956C0C00D30395 /* DJI_0017.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C264F1D956C0C00D30395 /* DJI_0017.JPG */; };
+		246C26631D956C0C00D30395 /* DJI_0018.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26501D956C0C00D30395 /* DJI_0018.JPG */; };
+		246C26641D956C0C00D30395 /* DJI_0019.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26511D956C0C00D30395 /* DJI_0019.JPG */; };
 		9702B4A51D290E9D000DC6EA /* StitchingWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9702B4A41D290E9D000DC6EA /* StitchingWrapper.mm */; };
-		9702B4B91D290EFC000DC6EA /* DJI_0001.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4A61D290EFC000DC6EA /* DJI_0001.JPG */; };
-		9702B4BA1D290EFC000DC6EA /* DJI_0002.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4A71D290EFC000DC6EA /* DJI_0002.JPG */; };
-		9702B4BB1D290EFC000DC6EA /* DJI_0003.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4A81D290EFC000DC6EA /* DJI_0003.JPG */; };
-		9702B4BC1D290EFC000DC6EA /* DJI_0004.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4A91D290EFC000DC6EA /* DJI_0004.JPG */; };
-		9702B4BD1D290EFC000DC6EA /* DJI_0005.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4AA1D290EFC000DC6EA /* DJI_0005.JPG */; };
-		9702B4BE1D290EFC000DC6EA /* DJI_0006.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4AB1D290EFC000DC6EA /* DJI_0006.JPG */; };
-		9702B4BF1D290EFC000DC6EA /* DJI_0007.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4AC1D290EFC000DC6EA /* DJI_0007.JPG */; };
-		9702B4C01D290EFC000DC6EA /* DJI_0008.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4AD1D290EFC000DC6EA /* DJI_0008.JPG */; };
-		9702B4C11D290EFC000DC6EA /* DJI_0009.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4AE1D290EFC000DC6EA /* DJI_0009.JPG */; };
-		9702B4C21D290EFC000DC6EA /* DJI_0010.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4AF1D290EFC000DC6EA /* DJI_0010.JPG */; };
-		9702B4C31D290EFC000DC6EA /* DJI_0011.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4B01D290EFC000DC6EA /* DJI_0011.JPG */; };
-		9702B4C41D290EFC000DC6EA /* DJI_0012.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4B11D290EFC000DC6EA /* DJI_0012.JPG */; };
-		9702B4C51D290EFC000DC6EA /* DJI_0013.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4B21D290EFC000DC6EA /* DJI_0013.JPG */; };
-		9702B4C61D290EFC000DC6EA /* DJI_0014.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4B31D290EFC000DC6EA /* DJI_0014.JPG */; };
-		9702B4C71D290EFC000DC6EA /* DJI_0015.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4B41D290EFC000DC6EA /* DJI_0015.JPG */; };
-		9702B4C81D290EFC000DC6EA /* DJI_0016.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4B51D290EFC000DC6EA /* DJI_0016.JPG */; };
-		9702B4C91D290EFC000DC6EA /* DJI_0017.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4B61D290EFC000DC6EA /* DJI_0017.JPG */; };
-		9702B4CA1D290EFC000DC6EA /* DJI_0018.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4B71D290EFC000DC6EA /* DJI_0018.JPG */; };
-		9702B4CB1D290EFC000DC6EA /* DJI_0019.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 9702B4B81D290EFC000DC6EA /* DJI_0019.JPG */; };
 		976B33901D28FAD5004C1C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976B338F1D28FAD5004C1C46 /* AppDelegate.swift */; };
 		976B33921D28FAD5004C1C46 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976B33911D28FAD5004C1C46 /* ImageViewController.swift */; };
 		976B33951D28FAD5004C1C46 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 976B33931D28FAD5004C1C46 /* Main.storyboard */; };
@@ -72,6 +72,25 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		246C263F1D956C0C00D30395 /* DJI_0001.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0001.JPG; path = p4/DJI_0001.JPG; sourceTree = "<group>"; };
+		246C26401D956C0C00D30395 /* DJI_0002.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0002.JPG; path = p4/DJI_0002.JPG; sourceTree = "<group>"; };
+		246C26411D956C0C00D30395 /* DJI_0003.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0003.JPG; path = p4/DJI_0003.JPG; sourceTree = "<group>"; };
+		246C26421D956C0C00D30395 /* DJI_0004.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0004.JPG; path = p4/DJI_0004.JPG; sourceTree = "<group>"; };
+		246C26431D956C0C00D30395 /* DJI_0005.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0005.JPG; path = p4/DJI_0005.JPG; sourceTree = "<group>"; };
+		246C26441D956C0C00D30395 /* DJI_0006.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0006.JPG; path = p4/DJI_0006.JPG; sourceTree = "<group>"; };
+		246C26451D956C0C00D30395 /* DJI_0007.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0007.JPG; path = p4/DJI_0007.JPG; sourceTree = "<group>"; };
+		246C26461D956C0C00D30395 /* DJI_0008.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0008.JPG; path = p4/DJI_0008.JPG; sourceTree = "<group>"; };
+		246C26471D956C0C00D30395 /* DJI_0009.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0009.JPG; path = p4/DJI_0009.JPG; sourceTree = "<group>"; };
+		246C26481D956C0C00D30395 /* DJI_0010.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0010.JPG; path = p4/DJI_0010.JPG; sourceTree = "<group>"; };
+		246C26491D956C0C00D30395 /* DJI_0011.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0011.JPG; path = p4/DJI_0011.JPG; sourceTree = "<group>"; };
+		246C264A1D956C0C00D30395 /* DJI_0012.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0012.JPG; path = p4/DJI_0012.JPG; sourceTree = "<group>"; };
+		246C264B1D956C0C00D30395 /* DJI_0013.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0013.JPG; path = p4/DJI_0013.JPG; sourceTree = "<group>"; };
+		246C264C1D956C0C00D30395 /* DJI_0014.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0014.JPG; path = p4/DJI_0014.JPG; sourceTree = "<group>"; };
+		246C264D1D956C0C00D30395 /* DJI_0015.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0015.JPG; path = p4/DJI_0015.JPG; sourceTree = "<group>"; };
+		246C264E1D956C0C00D30395 /* DJI_0016.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0016.JPG; path = p4/DJI_0016.JPG; sourceTree = "<group>"; };
+		246C264F1D956C0C00D30395 /* DJI_0017.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0017.JPG; path = p4/DJI_0017.JPG; sourceTree = "<group>"; };
+		246C26501D956C0C00D30395 /* DJI_0018.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0018.JPG; path = p4/DJI_0018.JPG; sourceTree = "<group>"; };
+		246C26511D956C0C00D30395 /* DJI_0019.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0019.JPG; path = p4/DJI_0019.JPG; sourceTree = "<group>"; };
 		9702B4A31D290E9D000DC6EA /* DeviceStitchingPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeviceStitchingPOC-Bridging-Header.h"; sourceTree = "<group>"; };
 		9702B4A41D290E9D000DC6EA /* StitchingWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StitchingWrapper.mm; sourceTree = "<group>"; };
 		9702B4A61D290EFC000DC6EA /* DJI_0001.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0001.JPG; path = ../../../p4/DJI_0001.JPG; sourceTree = "<group>"; };
@@ -524,6 +543,25 @@
 		976B33831D28FAD5004C1C46 = {
 			isa = PBXGroup;
 			children = (
+				246C263F1D956C0C00D30395 /* DJI_0001.JPG */,
+				246C26401D956C0C00D30395 /* DJI_0002.JPG */,
+				246C26411D956C0C00D30395 /* DJI_0003.JPG */,
+				246C26421D956C0C00D30395 /* DJI_0004.JPG */,
+				246C26431D956C0C00D30395 /* DJI_0005.JPG */,
+				246C26441D956C0C00D30395 /* DJI_0006.JPG */,
+				246C26451D956C0C00D30395 /* DJI_0007.JPG */,
+				246C26461D956C0C00D30395 /* DJI_0008.JPG */,
+				246C26471D956C0C00D30395 /* DJI_0009.JPG */,
+				246C26481D956C0C00D30395 /* DJI_0010.JPG */,
+				246C26491D956C0C00D30395 /* DJI_0011.JPG */,
+				246C264A1D956C0C00D30395 /* DJI_0012.JPG */,
+				246C264B1D956C0C00D30395 /* DJI_0013.JPG */,
+				246C264C1D956C0C00D30395 /* DJI_0014.JPG */,
+				246C264D1D956C0C00D30395 /* DJI_0015.JPG */,
+				246C264E1D956C0C00D30395 /* DJI_0016.JPG */,
+				246C264F1D956C0C00D30395 /* DJI_0017.JPG */,
+				246C26501D956C0C00D30395 /* DJI_0018.JPG */,
+				246C26511D956C0C00D30395 /* DJI_0019.JPG */,
 				97A81C031D396A0F009AAEA7 /* config.cfg */,
 				97DEFAE11D380FD300F4FA22 /* libjpeg.framework */,
 				97DEFC0F1D38109000F4FA22 /* feature */,
@@ -1434,25 +1472,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				97A81C041D396A0F009AAEA7 /* config.cfg in Resources */,
-				9702B4B91D290EFC000DC6EA /* DJI_0001.JPG in Resources */,
-				9702B4BA1D290EFC000DC6EA /* DJI_0002.JPG in Resources */,
-				9702B4BB1D290EFC000DC6EA /* DJI_0003.JPG in Resources */,
-				9702B4BC1D290EFC000DC6EA /* DJI_0004.JPG in Resources */,
-				9702B4BD1D290EFC000DC6EA /* DJI_0005.JPG in Resources */,
-				9702B4BE1D290EFC000DC6EA /* DJI_0006.JPG in Resources */,
-				9702B4BF1D290EFC000DC6EA /* DJI_0007.JPG in Resources */,
-				9702B4C01D290EFC000DC6EA /* DJI_0008.JPG in Resources */,
-				9702B4C11D290EFC000DC6EA /* DJI_0009.JPG in Resources */,
-				9702B4C21D290EFC000DC6EA /* DJI_0010.JPG in Resources */,
-				9702B4C31D290EFC000DC6EA /* DJI_0011.JPG in Resources */,
-				9702B4C41D290EFC000DC6EA /* DJI_0012.JPG in Resources */,
-				9702B4C51D290EFC000DC6EA /* DJI_0013.JPG in Resources */,
-				9702B4C61D290EFC000DC6EA /* DJI_0014.JPG in Resources */,
-				9702B4C71D290EFC000DC6EA /* DJI_0015.JPG in Resources */,
-				9702B4C81D290EFC000DC6EA /* DJI_0016.JPG in Resources */,
-				9702B4C91D290EFC000DC6EA /* DJI_0017.JPG in Resources */,
-				9702B4CA1D290EFC000DC6EA /* DJI_0018.JPG in Resources */,
-				9702B4CB1D290EFC000DC6EA /* DJI_0019.JPG in Resources */,
+				246C26521D956C0C00D30395 /* DJI_0001.JPG in Resources */,
+				246C26531D956C0C00D30395 /* DJI_0002.JPG in Resources */,
+				246C26541D956C0C00D30395 /* DJI_0003.JPG in Resources */,
+				246C26551D956C0C00D30395 /* DJI_0004.JPG in Resources */,
+				246C26561D956C0C00D30395 /* DJI_0005.JPG in Resources */,
+				246C26571D956C0C00D30395 /* DJI_0006.JPG in Resources */,
+				246C26581D956C0C00D30395 /* DJI_0007.JPG in Resources */,
+				246C26591D956C0C00D30395 /* DJI_0008.JPG in Resources */,
+				246C265A1D956C0C00D30395 /* DJI_0009.JPG in Resources */,
+				246C265B1D956C0C00D30395 /* DJI_0010.JPG in Resources */,
+				246C265C1D956C0C00D30395 /* DJI_0011.JPG in Resources */,
+				246C265D1D956C0C00D30395 /* DJI_0012.JPG in Resources */,
+				246C265E1D956C0C00D30395 /* DJI_0013.JPG in Resources */,
+				246C265F1D956C0C00D30395 /* DJI_0014.JPG in Resources */,
+				246C26601D956C0C00D30395 /* DJI_0015.JPG in Resources */,
+				246C26611D956C0C00D30395 /* DJI_0016.JPG in Resources */,
+				246C26621D956C0C00D30395 /* DJI_0017.JPG in Resources */,
+				246C26631D956C0C00D30395 /* DJI_0018.JPG in Resources */,
+				246C26641D956C0C00D30395 /* DJI_0019.JPG in Resources */,
 				976B33951D28FAD5004C1C46 /* Main.storyboard in Resources */,
 				976B339A1D28FAD5004C1C46 /* LaunchScreen.storyboard in Resources */,
 				976B33971D28FAD5004C1C46 /* Assets.xcassets in Resources */,

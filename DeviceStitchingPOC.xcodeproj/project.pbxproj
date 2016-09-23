@@ -1445,6 +1445,7 @@
 					976B338B1D28FAD5004C1C46 = {
 						CreatedOnToolsVersion = 7.3;
 						DevelopmentTeam = K877M5CQ2L;
+						LastSwiftMigration = 0800;
 					};
 				};
 			};
@@ -1688,6 +1689,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DeviceStitchingPOC-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 2.3;
 				USE_HEADERMAP = YES;
 			};
 			name = Debug;
@@ -1725,6 +1727,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeviceStitchingPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DeviceStitchingPOC-Bridging-Header.h";
+				SWIFT_VERSION = 2.3;
 				USE_HEADERMAP = YES;
 			};
 			name = Release;

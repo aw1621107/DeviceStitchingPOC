@@ -26,6 +26,7 @@
 		246C26621D956C0C00D30395 /* DJI_0017.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C264F1D956C0C00D30395 /* DJI_0017.JPG */; };
 		246C26631D956C0C00D30395 /* DJI_0018.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26501D956C0C00D30395 /* DJI_0018.JPG */; };
 		246C26641D956C0C00D30395 /* DJI_0019.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26511D956C0C00D30395 /* DJI_0019.JPG */; };
+		246C266B1D95834200D30395 /* libomp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 246C26671D95825900D30395 /* libomp.dylib */; };
 		9702B4A51D290E9D000DC6EA /* StitchingWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9702B4A41D290E9D000DC6EA /* StitchingWrapper.mm */; };
 		976B33901D28FAD5004C1C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976B338F1D28FAD5004C1C46 /* AppDelegate.swift */; };
 		976B33921D28FAD5004C1C46 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976B33911D28FAD5004C1C46 /* ImageViewController.swift */; };
@@ -71,6 +72,20 @@
 		97DEFC4D1D38109000F4FA22 /* utils.cc in Sources */ = {isa = PBXBuildFile; fileRef = 97DEFC381D38109000F4FA22 /* utils.cc */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXBuildRule section */
+		246C26651D9581A400D30395 /* PBXBuildRule */ = {
+			isa = PBXBuildRule;
+			compilerSpec = com.apple.compilers.proxy.script;
+			filePatterns = "*.cc *.cpp";
+			fileType = pattern.proxy;
+			isEditable = 1;
+			outputFiles = (
+				"$(OBJECT_FILE_DIR_normal)/$(ARCHS)/$(INPUT_FILE_BASE).o",
+			);
+			script = "/usr/local/opt/llvm/bin/clang++ -c $INPUT_FILE_PATH -o $OBJECT_FILE_DIR_normal/$ARCHS/$INPUT_FILE_BASE.o -std=c++11 -arch i386 -fopenmp -I$SRCROOT/DeviceStitchingPOC -I$SRCROOT/DeviceStitchingPOC/third-party -I$SRCROOT/libjpeg.framework/Headers";
+		};
+/* End PBXBuildRule section */
+
 /* Begin PBXFileReference section */
 		246C263F1D956C0C00D30395 /* DJI_0001.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0001.JPG; path = ../p4/DJI_0001.JPG; sourceTree = "<group>"; };
 		246C26401D956C0C00D30395 /* DJI_0002.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0002.JPG; path = ../p4/DJI_0002.JPG; sourceTree = "<group>"; };
@@ -91,6 +106,7 @@
 		246C264F1D956C0C00D30395 /* DJI_0017.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0017.JPG; path = ../p4/DJI_0017.JPG; sourceTree = "<group>"; };
 		246C26501D956C0C00D30395 /* DJI_0018.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0018.JPG; path = ../p4/DJI_0018.JPG; sourceTree = "<group>"; };
 		246C26511D956C0C00D30395 /* DJI_0019.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = DJI_0019.JPG; path = ../p4/DJI_0019.JPG; sourceTree = "<group>"; };
+		246C26671D95825900D30395 /* libomp.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libomp.dylib; path = build/runtime/src/libomp.dylib; sourceTree = "<group>"; };
 		9702B4A31D290E9D000DC6EA /* DeviceStitchingPOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DeviceStitchingPOC-Bridging-Header.h"; sourceTree = "<group>"; };
 		9702B4A41D290E9D000DC6EA /* StitchingWrapper.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = StitchingWrapper.mm; sourceTree = "<group>"; };
 		9702B4CD1D291239000DC6EA /* StitchingWrapper.hh */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StitchingWrapper.hh; sourceTree = "<group>"; };
@@ -514,6 +530,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				246C266B1D95834200D30395 /* libomp.dylib in Frameworks */,
 				97DEFAE21D380FD300F4FA22 /* libjpeg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -521,6 +538,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		246C26661D95825800D30395 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				246C26671D95825900D30395 /* libomp.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		976B33831D28FAD5004C1C46 = {
 			isa = PBXGroup;
 			children = (
@@ -533,6 +558,7 @@
 				976B338E1D28FAD5004C1C46 /* DeviceStitchingPOC */,
 				976B338D1D28FAD5004C1C46 /* Products */,
 				9702B4A31D290E9D000DC6EA /* DeviceStitchingPOC-Bridging-Header.h */,
+				246C26661D95825800D30395 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -1382,10 +1408,12 @@
 			buildConfigurationList = 976B339E1D28FAD5004C1C46 /* Build configuration list for PBXNativeTarget "DeviceStitchingPOC" */;
 			buildPhases = (
 				976B33881D28FAD5004C1C46 /* Sources */,
+				246C26691D95829500D30395 /* ShellScript */,
 				976B33891D28FAD5004C1C46 /* Frameworks */,
 				976B338A1D28FAD5004C1C46 /* Resources */,
 			);
 			buildRules = (
+				246C26651D9581A400D30395 /* PBXBuildRule */,
 			);
 			dependencies = (
 			);
@@ -1461,6 +1489,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		246C26691D95829500D30395 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+				$SRCROOT/build/runtime/src/libomp.dylib,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "$SRCROOT/build-openmp-for-ios-simulator.sh";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		976B33881D28FAD5004C1C46 /* Sources */ = {
@@ -1647,11 +1692,12 @@
 					"$(SRCROOT)/libjpeg.framework/**",
 				);
 				INFOPLIST_FILE = DeviceStitchingPOC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(PROJECT_DIR)/build/runtime/src";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/DeviceStitchingPOC/third-party",
+					"$(PROJECT_DIR)/build/runtime/src",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeviceStitchingPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1687,11 +1733,12 @@
 					"$(SRCROOT)/libjpeg.framework/**",
 				);
 				INFOPLIST_FILE = DeviceStitchingPOC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(PROJECT_DIR)/build/runtime/src";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/DeviceStitchingPOC/third-party",
+					"$(PROJECT_DIR)/build/runtime/src",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeviceStitchingPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";

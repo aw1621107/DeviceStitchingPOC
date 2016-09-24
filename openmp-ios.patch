@@ -17,7 +17,7 @@ index 4e7cf8cd0587..29156da7e65b 100644
          #define environ (*_NSGetEnviron())
      #else
 diff --git a/runtime/src/z_Linux_asm.s b/runtime/src/z_Linux_asm.s
-index 60130a4c0eff..955f78b920fe 100644
+index 60130a4c0eff..9ef498c93ebd 100644
 --- a/runtime/src/z_Linux_asm.s
 +++ b/runtime/src/z_Linux_asm.s
 @@ -17,6 +17,7 @@
@@ -48,3 +48,13 @@ index 60130a4c0eff..955f78b920fe 100644
  #endif /* KMP_ARCH_ARM */
  
  #if KMP_ARCH_PPC64 || KMP_ARCH_AARCH64
+@@ -1795,7 +1800,9 @@ __kmp_unnamed_critical_addr:
+     .global __kmp_unnamed_critical_addr
+ __kmp_unnamed_critical_addr:
+     .8byte .gomp_critical_user_
++#   if !TARGET_OS_IOS
+     .size __kmp_unnamed_critical_addr,8
++#   endif /* !TARGET_OS_IOS */
+ #endif /* KMP_ARCH_PPC64 || KMP_ARCH_AARCH64 */
+ 
+ #if KMP_OS_LINUX

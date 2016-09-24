@@ -2,3 +2,4 @@
 	path = openmp
 	url = http://llvm.org/git/openmp.git
 	ignore = dirty
+	shallow = true

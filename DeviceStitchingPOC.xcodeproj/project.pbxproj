@@ -81,7 +81,7 @@
 			outputFiles = (
 				"$(OBJECT_FILE_DIR_normal)/$(CURRENT_ARCH)/$(INPUT_FILE_BASE).o",
 			);
-			script = "/usr/local/opt/llvm/bin/clang++ -c $INPUT_FILE_PATH -o $OBJECT_FILE_DIR_normal/$CURRENT_ARCH/$INPUT_FILE_BASE.o -std=c++11 -arch $CURRENT_ARCH -fopenmp -I$SRCROOT/DeviceStitchingPOC -I$SRCROOT/DeviceStitchingPOC/third-party -I$SRCROOT/libjpeg.framework/Headers";
+			script = "/usr/local/opt/llvm/bin/clang++ -c $INPUT_FILE_PATH -o $OBJECT_FILE_DIR_normal/$CURRENT_ARCH/$INPUT_FILE_BASE.o -std=c++11 -arch $CURRENT_ARCH -fopenmp -g -I$SRCROOT/DeviceStitchingPOC -I$SRCROOT/DeviceStitchingPOC/third-party -I$SRCROOT/libjpeg.framework/Headers";
 		};
 /* End PBXBuildRule section */
 

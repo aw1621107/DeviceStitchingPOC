@@ -26,7 +26,6 @@
 		246C26621D956C0C00D30395 /* DJI_0017.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C264F1D956C0C00D30395 /* DJI_0017.JPG */; };
 		246C26631D956C0C00D30395 /* DJI_0018.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26501D956C0C00D30395 /* DJI_0018.JPG */; };
 		246C26641D956C0C00D30395 /* DJI_0019.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 246C26511D956C0C00D30395 /* DJI_0019.JPG */; };
-		246C266B1D95834200D30395 /* libomp.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 246C26671D95825900D30395 /* libomp.dylib */; };
 		9702B4A51D290E9D000DC6EA /* StitchingWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 9702B4A41D290E9D000DC6EA /* StitchingWrapper.mm */; };
 		976B33901D28FAD5004C1C46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976B338F1D28FAD5004C1C46 /* AppDelegate.swift */; };
 		976B33921D28FAD5004C1C46 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 976B33911D28FAD5004C1C46 /* ImageViewController.swift */; };
@@ -80,9 +79,9 @@
 			fileType = pattern.proxy;
 			isEditable = 1;
 			outputFiles = (
-				"$(OBJECT_FILE_DIR_normal)/$(ARCHS)/$(INPUT_FILE_BASE).o",
+				"$(OBJECT_FILE_DIR_normal)/$(CURRENT_ARCH)/$(INPUT_FILE_BASE).o",
 			);
-			script = "/usr/local/opt/llvm/bin/clang++ -c $INPUT_FILE_PATH -o $OBJECT_FILE_DIR_normal/$ARCHS/$INPUT_FILE_BASE.o -std=c++11 -arch i386 -arch x86_64 -fopenmp -I$SRCROOT/DeviceStitchingPOC -I$SRCROOT/DeviceStitchingPOC/third-party -I$SRCROOT/libjpeg.framework/Headers";
+			script = "/usr/local/opt/llvm/bin/clang++ -c $INPUT_FILE_PATH -o $OBJECT_FILE_DIR_normal/$CURRENT_ARCH/$INPUT_FILE_BASE.o -std=c++11 -arch $CURRENT_ARCH -fopenmp -I$SRCROOT/DeviceStitchingPOC -I$SRCROOT/DeviceStitchingPOC/third-party -I$SRCROOT/libjpeg.framework/Headers";
 		};
 /* End PBXBuildRule section */
 
@@ -530,7 +529,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				246C266B1D95834200D30395 /* libomp.dylib in Frameworks */,
 				97DEFAE21D380FD300F4FA22 /* libjpeg.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -541,7 +539,7 @@
 		246C26661D95825800D30395 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				246C26671D95825900D30395 /* libomp.dylib */,
+				240EE6581D97072F00743C8B /* libomp.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1407,8 +1405,8 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 976B339E1D28FAD5004C1C46 /* Build configuration list for PBXNativeTarget "DeviceStitchingPOC" */;
 			buildPhases = (
-				976B33881D28FAD5004C1C46 /* Sources */,
 				246C26691D95829500D30395 /* ShellScript */,
+				976B33881D28FAD5004C1C46 /* Sources */,
 				976B33891D28FAD5004C1C46 /* Frameworks */,
 				976B338A1D28FAD5004C1C46 /* Resources */,
 			);
@@ -1497,13 +1495,15 @@
 			files = (
 			);
 			inputPaths = (
+				"$(SRCROOT)/openmp/",
 			);
 			outputPaths = (
-				$SRCROOT/build/runtime/src/libomp.dylib,
+				"$(DERIVED_FILE_DIR)/openmp-$(CURRENT_ARCH)/runtime/src/libomp.a",
+				"$(DERIVED_FILE_DIR)/openmp-$(CURRENT_ARCH)/CMakeFiles/",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "$SRCROOT/build-openmp-for-ios-simulator.sh";
+			shellPath = /bin/bash;
+			shellScript = "if [[ $CURRENT_ARCH == *\"arm\"* ]]; then\n    export CURRENT_ARCH_TWEAKED=\"arm\"\nfi\ncd $DERIVED_FILE_DIR/openmp-$CURRENT_ARCH/\nexport CC=/usr/local/opt/llvm/bin/clang\nexport CXX=/usr/local/opt/llvm/bin/clang++\ncmake $SRCROOT/openmp -DCMAKE_BUILD_TYPE=$CONFIGURATION \\\n                      -DCMAKE_OSX_ARCHITECTURES=\"$CURRENT_ARCH\" \\\n                      -DCMAKE_OSX_SYSROOT=\"$SDKROOT\" \\\n                      -DCMAKE_CXX_FLAGS=\"${CMAKE_CXX_FLAGS} $DEPLOYMENT_TARGET_CLANG_FLAG_PREFIX${!DEPLOYMENT_TARGET_SETTING_NAME}\" \\\n                      -DCMAKE_C_FLAGS=\"${CMAKE_C_FLAGS} $DEPLOYMENT_TARGET_CLANG_FLAG_PREFIX${!DEPLOYMENT_TARGET_SETTING_NAME}\" \\\n                      -DLIBOMP_ARCH=$CURRENT_ARCH_TWEAKED \\\n                      -DLIBOMP_ENABLE_SHARED=False \\\n                      -DLIBOMP_LLVM_LIT_EXECUTABLE=/usr/local/opt/llvm/bin/llvm-lit \\\n                      -DLIBOMP_TEST_CFLAGS=\"${LIBOMP_TEST_CFLAGS} $DEPLOYMENT_TARGET_CLANG_FLAG_PREFIX${!DEPLOYMENT_TARGET_SETTING_NAME}\"\nmake -j 4";
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -1692,13 +1692,14 @@
 					"$(SRCROOT)/libjpeg.framework/**",
 				);
 				INFOPLIST_FILE = DeviceStitchingPOC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(PROJECT_DIR)/build/runtime/src";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/DeviceStitchingPOC/third-party",
-					"$(PROJECT_DIR)/build/runtime/src",
+					"$(DERIVED_FILES_DIR)/openmp-$(CURRENT_ARCH)/runtime/src",
 				);
+				OTHER_LDFLAGS = "-lomp";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeviceStitchingPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DeviceStitchingPOC-Bridging-Header.h";
@@ -1733,13 +1734,14 @@
 					"$(SRCROOT)/libjpeg.framework/**",
 				);
 				INFOPLIST_FILE = DeviceStitchingPOC/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks $(PROJECT_DIR)/build/runtime/src";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 					"$(PROJECT_DIR)/DeviceStitchingPOC/third-party",
-					"$(PROJECT_DIR)/build/runtime/src",
+					"$(DERIVED_FILES_DIR)/openmp-$(CURRENT_ARCH)/runtime/src",
 				);
+				OTHER_LDFLAGS = "-lomp";
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.DeviceStitchingPOC;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "DeviceStitchingPOC-Bridging-Header.h";
